@@ -1,7 +1,6 @@
 package com.example.back_end.api;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,7 +24,7 @@ public class CustomerAPI {
         customerList.add(c3);
     }
 
-    @GetMapping()
+    @GetMapping
     public ResponseEntity<?> getCustomers() {
         return ResponseEntity.ok(customerList);
     }
