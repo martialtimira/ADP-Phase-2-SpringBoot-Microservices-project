@@ -47,13 +47,8 @@ class CustomerList extends React.Component {
           </tbody></table>
           <hr></hr>
           <p style={{'paddingLeft':'10px'}}>
-          <input 
-            style={{ display:'none', width:'fit-content'}} 
-            className='btn btn-primary' 
-            type={'button'} 
-            onClick={this.props.handleNewCustomerClick} 
-            value="New Customer" 
-            />          </p>
+            <input style={{width:'fit-content'}} className='btn btn-primary' type={'button'} onClick={this.props.handleNewCustomerClick} value="New Customer" />
+          </p>
       </div>
     )
   }

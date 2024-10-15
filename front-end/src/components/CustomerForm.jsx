@@ -40,9 +40,9 @@ const CustomerForm = ({ customer, usage, handleChange, handleCustomerEditClick,
                 <input type={'button'} value="Delete" 
                     onClick={ (e)=>handleCustomerDeleteClick(e, customer) } 
                     hidden={usage ==='none' || usage === 'view' || usage === 'add' } />
-                <input type={'button'} value="Save" onClick={ (e)=>handleCustomerSaveClick(e, customer) } hidden={ usage === 'none' || usage === 'view'} />
-                <input type={'button'} value="Cancel" onClick={ (e)=>handleEditCancelClick(e, customer) } hidden={ usage === 'none' || usage === 'view'} />
-                <input style={{ display:'none'}} type={'button'} value="Edit" onClick={ (e)=>handleCustomerEditClick(e, customer) } hidden={ usage === 'none' || usage === 'edit' || usage === 'add'} />
+                <input type={'button'} value="Save" onClick={ (e)=>handleCustomerSaveClick(e, customer, usage) } hidden={ usage === 'none' || usage === 'view'} />
+                <input type={'button'} value="Cancel" onClick={ (e)=>handleEditCancelClick(e, customer, usage) } hidden={ usage === 'none' || usage === 'view'} />
+                <input type={'button'} value="Edit" onClick={ (e)=>handleCustomerEditClick(e, customer) } hidden={ usage === 'none' || usage === 'edit' || usage === 'add'} />
             </form>
         </div>  
     </div>

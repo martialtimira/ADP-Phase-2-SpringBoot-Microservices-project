@@ -202,6 +202,7 @@ class RestAPI {
     promise.then((response) => {
       return response.text();
     }).then(function (text) {
+      console.log('getCustomers Request successful: ', text);
       let customers = JSON.parse(text);
       dispatch(applyCustomersUpdate(customers));
     });

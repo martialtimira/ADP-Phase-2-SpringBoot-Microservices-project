@@ -97,7 +97,7 @@ function App({login}) {
   return (
     <Router>
     <div className="App">
-        <h1>Customer Initial App</h1>
+        <h1>Customer CRUD App</h1>
         <Custom login={login} />
     </div>
     </Router>
