@@ -33,7 +33,7 @@ public class SecurityConfig {
 
                 // All inbound requests must be authenticated:
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/", "/token").permitAll()
+                        .requestMatchers("/", "/token", "/register").permitAll()
                         .anyRequest().authenticated())
 
                 // Cusomize our resource server to receive JWTs,
